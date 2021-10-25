@@ -1,0 +1,21 @@
+i {
+  cursor: pointer;
+  margin-left: 0.35rem;
+}
+
+small {
+  color: red;
+}
+
+.fa-trash {
+  color: #db2323;
+}
+
+.fa-edit {
+  color: orange;
+}
+
+.container {
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */

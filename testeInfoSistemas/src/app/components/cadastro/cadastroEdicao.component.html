@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="card-body">
+            <form [formGroup]="formulario">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <label>Modelo</label>
+                        <input class="form-control" type="text" formControlName="modelo" maxlength="20"
+                            aria-label="input example">
+                        <small
+                            *ngIf="!formulario.get('modelo').pristine && formulario.get('modelo').hasError('required')">
+                            Campo <strong>obrigatório!</strong>
+                        </small>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <label>Marca</label>
+                        <input class="form-control" type="text" formControlName="marca" maxlength="25"
+                            aria-label="input example">
+                        <small
+                            *ngIf="!formulario.get('marca').pristine && formulario.get('marca').hasError('required')">
+                            Campo <strong>obrigatório!</strong>
+                        </small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <label>Placa</label>
+                        <input class="form-control" type="text" formControlName="placa" maxlength="8"
+                            aria-label="input example">
+                        <small
+                            *ngIf="!formulario.get('placa').pristine && formulario.get('placa').hasError('required')">
+                            Campo <strong>obrigatório!</strong>
+                        </small>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <label>Ano</label>
+                        <input class="form-control" type="text" maxlength="4" formControlName="ano"
+                            aria-label="input example">
+                        <small *ngIf="!formulario.get('ano').pristine && formulario.get('ano').hasError('required')">
+                            Campo <strong>obrigatório!</strong>
+                        </small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <label>Chassi</label>
+                        <input class="form-control" type="text" formControlName="chassi" maxlength="20"
+                            aria-label="input example">
+                        <small
+                            *ngIf="!formulario.get('chassi').pristine && formulario.get('chassi').hasError('required')">
+                            Campo <strong>obrigatório!</strong>
+                        </small>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <label>Renavam</label>
+                        <input class="form-control" type="text" formControlName="renavam" maxlength="20"
+                            aria-label="input example">
+                        <small
+                            *ngIf="!formulario.get('renavam').pristine && formulario.get('renavam').hasError('required')">
+                            Campo <strong>obrigatório!</strong>
+                        </small>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
